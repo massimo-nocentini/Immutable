@@ -85,11 +85,6 @@ Maybe >> ifAbsent: absentBlock [
 	^ self ifAbsent: absentBlock ifPresent: [:v | v]
 ]
 
-{ #category : #'as yet unclassified' }
-Maybe >> ifNothing: nBlock ifJust: jBlock [
-	self subclassResponsibility
-]
-
 { #category : #'pattern-matching' }
 Maybe >> printOn: aStream [
 	self

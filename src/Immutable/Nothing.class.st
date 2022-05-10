@@ -20,11 +20,6 @@ Nothing >> ifAbsent: nothingBlock ifPresent: somethingBlock [
 	^ nothingBlock value
 ]
 
-{ #category : #'as yet unclassified' }
-Nothing >> ifNothing: nBlock ifJust: jBlock [
-	^ nBlock value
-]
-
 { #category : #'pattern-matching' }
 Nothing >> ifPresent: somethingBlock ifAbsent: nothingBlock [
 	^ nothingBlock value
