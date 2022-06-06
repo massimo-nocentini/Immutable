@@ -43,18 +43,6 @@ Class {
 	#category : #'Immutable-Monads'
 }
 
-{ #category : #'as yet unclassified' }
-Maybe class >> just: anObject [
-	^ Just new
-		content: anObject;
-		yourself
-]
-
-{ #category : #'as yet unclassified' }
-Maybe class >> nothing [
-	^ Nothing new
-]
-
 { #category : #creating }
 Maybe class >> return: aValue [
 	^ Something withValue: aValue
